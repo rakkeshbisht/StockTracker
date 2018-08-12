@@ -1,0 +1,12 @@
+#main .mainnav{
+    height: 45px;
+}
+
+#main .secondarynav{
+    height: 35px;
+}
+
+#main .navbar .navbar-nav > li > a.router-link-active {
+    color : blue;
+    background-color: #e7e7e7;
+}

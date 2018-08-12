@@ -1,0 +1,2 @@
+#watchlist .container ul li { background: white; }
+#watchlist .container ul li:nth-child(odd) { background: lightgrey; }

@@ -1,0 +1,36 @@
+<div id="main">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary mainnav">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Stock Tracker</a>
+      </div>
+    </div>
+  </nav>
+
+  <nav class="navbar navbar-expand-sm navbar-light bg-light secondarynav">
+    <ul class="navbar-nav container-fluid">
+      <li [routerLinkActive]="['active']" class="nav-item">
+        <a class="nav-link" [routerLink]="['/watchlist']">
+          <span><i class="fa fa-eye"></i> Watchlist </span>
+        </a>
+      </li>
+      <li [routerLinkActive]="['active']" class="nav-item">
+        <a class="nav-link" [routerLink]="['/portfolio']">
+          <span><i class="fa fa-bar-chart"></i> Portfolio </span>
+        </a>
+      </li>
+      <li [routerLinkActive]="['active']" class="nav-item">
+        <a class="nav-link" [routerLink]="['/news']">
+          <span><i class="fa fa-newspaper-o"></i> News </span>
+        </a>
+      </li>
+      <li [routerLinkActive]="['active']" class="nav-item">
+        <a class="nav-link" [routerLink]="['/settings']">
+          <span><i class="fa fa-cog"></i> Settings </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <router-outlet></router-outlet>
+</div>

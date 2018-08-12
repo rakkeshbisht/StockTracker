@@ -1,0 +1,15 @@
+<div id="watchlist">
+  <div class="container">
+    <ul *ngFor="let item of stockList | async">
+      <li>
+        <span class="symbolDescription"> {{item.symbolDescription}} </span> |
+        <span class="symbol"> {{item.symbol.toUpperCase()}} </span>   |
+        <span class="lastTradePrice"> {{item.lastTradePriceOnly | currencyCode: 'INR'}} </span>
+      </li>      
+      <li>
+        <span>% Change : {{item.changeInPercent | percent : '.2'}} </span> 
+        <span> Change : {{item.change}} </span> 
+      </li>           
+    </ul>
+  </div>
+</div>
